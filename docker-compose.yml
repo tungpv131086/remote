@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  web1:
+    build: app
+    ports:
+      - "3000:3000"
+
+  nginx:
+#	image: "nginx-Hung"
+    build: nginx
+    ports:
+      - "80:80"
